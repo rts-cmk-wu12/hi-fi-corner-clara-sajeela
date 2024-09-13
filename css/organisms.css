@@ -1,15 +1,17 @@
-/*-------- header ----------*/
+
+/*--------- transparent header top----------*/
 
 .header-top {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
+    height: 80px; /* Set the height for the fixed header */
 }
 
 .header-top .logo-icons img {
@@ -29,42 +31,13 @@
     cursor: pointer;
 }
 
+
 .header-top .subscribe-btn img {
     width: 20px;
     margin-right: 8px;
 }
 
-.nav-section {
-    background-color: black;
-    padding: 15px;
-    margin-top: 60px; 
-}
 
-.nav-section ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    
-  
-}
-
-.nav-section ul li {
-    display: inline;
-
-}
-
-.nav-section ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 10px;
-}
-
-.nav-section ul li a:hover {
-    color: var(--primary-color); /* Change text color on hover */
-}
 
 .header-top .logo-icons i {
     font-size: 15px;
@@ -77,3 +50,54 @@
     margin-right: 8px;
     color: white;
 }
+
+/* ------Navigation Section -------*/
+.nav-section {
+    background-color: black;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    margin-top: 80px; 
+    z-index: 9; 
+}
+
+.nav-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-section ul li {
+    display: inline;
+
+}
+
+.nav-section ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-section ul li a:hover {
+    color: var(--primary-color); 
+}
+
+
+/*--------- stereo hero -------------*/
+.hero {
+    background-image: url('../Hi-Fi_slider1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+

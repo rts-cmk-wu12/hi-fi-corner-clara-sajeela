@@ -1,0 +1,79 @@
+/*-------- header ----------*/
+
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.header-top .logo-icons img {
+    width: 24px;
+    margin-left: 20px;
+}
+
+.header-top .subscribe-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding: 5px 15px;
+    background-color: #1998ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-top .subscribe-btn img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.nav-section {
+    background-color: black;
+    padding: 15px;
+    margin-top: 60px; 
+}
+
+.nav-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+  
+}
+
+.nav-section ul li {
+    display: inline;
+
+}
+
+.nav-section ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 10px;
+}
+
+.nav-section ul li a:hover {
+    color: var(--primary-color); /* Change text color on hover */
+}
+
+.header-top .logo-icons i {
+    font-size: 15px;
+    color: white;
+    margin-left: 20px;
+}
+
+.subscribe-btn i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: white;
+}

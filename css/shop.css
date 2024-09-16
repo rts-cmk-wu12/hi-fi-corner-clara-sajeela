@@ -1,0 +1,39 @@
+
+
+.page__items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  
+    margin: auto 12em;
+}
+.page__image{
+   display: grid;
+justify-content: center;
+align-items: center;
+background-color: #a39161;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.thumbs{
+    width: 100%;
+    height: 100%;
+}
+.img,
+.info{
+    grid-area: 1/1/2/-1;
+  
+}
+.info a {
+    color: white;
+padding-left: 4em;
+}
+
+.sumit{
+    background-color: #685255;
+    color:white;
+    border: #685255;
+    
+}

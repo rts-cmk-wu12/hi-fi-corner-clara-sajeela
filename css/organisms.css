@@ -1,15 +1,17 @@
-/*-------- header ----------*/
+
+/*--------- transparent header top----------*/
 
 .header-top {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
+    height: 80px; /* Set the height for the fixed header */
 }
 
 .header-top .logo-icons img {
@@ -29,42 +31,13 @@
     cursor: pointer;
 }
 
+
 .header-top .subscribe-btn img {
     width: 20px;
     margin-right: 8px;
 }
 
-.nav-section {
-    background-color: black;
-    padding: 15px;
-    margin-top: 60px; 
-}
 
-.nav-section ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    
-  
-}
-
-.nav-section ul li {
-    display: inline;
-
-}
-
-.nav-section ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 10px;
-}
-
-.nav-section ul li a:hover {
-    color: var(--primary-color); /* Change text color on hover */
-}
 
 .header-top .logo-icons i {
     font-size: 15px;
@@ -77,3 +50,158 @@
     margin-right: 8px;
     color: white;
 }
+
+/* ------Navigation Section -------*/
+.nav-section {
+    background-color: black;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    margin-top: 80px; 
+    z-index: 9; 
+}
+
+.nav-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-section ul li {
+    display: inline;
+
+}
+
+.nav-section ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-section ul li a:hover {
+    color: var(--primary-color); 
+}
+
+  
+/*----------- carrousel ------------*/
+.carrousel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex {
+    display: flex;
+  }
+
+  .imagewindow {
+    position: relative;
+    width: 980px;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .imageroll {
+    display: flex;
+    transition: transform 0.5s ease;
+  
+  }
+
+  .button {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    z-index: 1;
+    color: var(--secondary-color);
+    font-size: 80px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .prev::before,
+  .next::before {
+    font-family: Arial, sans-serif;
+  }
+  
+  .prev::before {
+    content: '\2039';
+  }
+  
+  .next::before {
+    content: '\203A';
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top 0 right 10px;
+  
+  }
+
+  /*------------ footer --------------*/
+  footer {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+    background-color: var(--primary-color); 
+    color: black; 
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+
+  }
+  
+  footer section {
+    display: flex;
+    flex-direction: column; 
+    font-size: 10px;
+  }
+  
+  footer section img {
+    width: 450px; 
+    height: 50px;
+  }
+  
+  section.link {
+    display: inline-block; 
+    margin-left: -400px;
+  }
+
+  section.link a {
+    color: white;
+    padding: 10px;
+  }
+
+  section.link a:not(:last-child) {
+    border-right: 1px solid white;
+   
+  }
+
+  footer a {
+    color: white; 
+   
+  }
+  
+
+
+
+

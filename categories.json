@@ -4,79 +4,97 @@
         "category": "Phones",
         "descriptors": [
           {
-            "type": "Smartphone",
+            "price": "$699",
             "brand": "Apple",
             "model": "iPhone 13",
             "year": 2021,
-            "features": ["Face ID", "5G", "OLED Display"]
+            "features": ["5G", "A15 Bionic chip", "12MP Camera"],
+            "image": "produktbilleder/cd_afspillere/creek_classic_cd.jpg"
           },
           {
-            "type": "Smartphone",
+            "price": "$799",
             "brand": "Samsung",
             "model": "Galaxy S21",
             "year": 2021,
-            "features": ["Triple Camera", "120Hz Display", "5G"]
+            "features": ["5G", "Exynos 2100", "64MP Camera"],
+             "image": "produktbilleder/cd_afspillere/creek_evo_cd.jpg"
           },
           {
-            "type": "Smartphone",
+            "price": "$999",
             "brand": "Google",
             "model": "Pixel 6",
             "year": 2021,
-            "features": ["Google Tensor", "5G", "90Hz OLED Display"]
+            "features": ["5G", "Tensor chip", "50MP Camera"],
+             "image": "produktbilleder/cd_afspillere/Exp_2010S_CD.gif"
           },
           {
-            "type": "Smartphone",
+            "price": "$499",
             "brand": "OnePlus",
-            "model": "OnePlus 9 Pro",
+            "model": "Nord N200",
             "year": 2021,
-            "features": ["Hasselblad Camera", "5G", "120Hz Display"]
+            "features": ["5G", "Snapdragon 480", "64MP Camera"],
+             "image": "produktbilleder/dvdafspillere/creek_classic.jpg"
           },
           {
-            "type": "Feature Phone",
-            "brand": "Nokia",
-            "model": "3310",
-            "year": 2000,
-            "features": ["SMS", "Snake Game", "Long Battery Life"]
+            "price": "$1199",
+            "brand": "Sony",
+            "model": "Xperia 1 III",
+            "year": 2021,
+            "features": ["5G", "Snapdragon 888", "12MP Camera"],
+            "image": "produktbilleder/pladespillere/Pro_ject_rpm_5.jpg"
+          },
+          {
+            "price": "$1199",
+            "brand": "Sony",
+            "model": "Xperia 1 III",
+            "year": 2021,
+            "features": ["5G", "Snapdragon 888", "12MP Camera"],
+            "image": "produktbilleder/pladespillere/Pro_ject_rpm_5.jpg"
           }
         ]
       },
       {
-        "category": "Laptops",
+        "category": "Stereo",
         "descriptors": [
           {
-            "type": "Gaming Laptop",
-            "brand": "Razer",
-            "model": "Blade 15",
-            "year": 2022,
-            "features": ["NVIDIA RTX 3080", "144Hz Display", "RGB Keyboard"]
-          },
-          {
-            "type": "Ultrabook",
-            "brand": "Apple",
-            "model": "MacBook Air M1",
+            "price": "$199",
+            "brand": "Bose",
+            "model": "SoundLink Revolve",
             "year": 2020,
-            "features": ["M1 Chip", "Retina Display", "Fanless Design"]
+            "features": ["360-degree sound", "Bluetooth", "12-hour battery"],
+             "image": "produktbilleder/dvdafspillere/parasound_d200.jpg"
           },
           {
-            "type": "Business Laptop",
-            "brand": "Lenovo",
-            "model": "ThinkPad X1 Carbon",
-            "year": 2021,
-            "features": ["Carbon Fiber", "Fingerprint Reader", "14-inch Display"]
+            "price": "$299",
+            "brand": "Sony",
+            "model": "SRS-XB43",
+            "year": 2020,
+            "features": ["Extra Bass", "Bluetooth", "24-hour battery"],
+             "image": "produktbilleder/dvdafspillere/parasound_halod3.jpg"
           },
           {
-            "type": "2-in-1 Laptop",
-            "brand": "Microsoft",
-            "model": "Surface Pro 7",
+            "price": "$149",
+            "brand": "JBL",
+            "model": "Flip 5",
             "year": 2019,
-            "features": ["Touchscreen", "Kickstand", "Detachable Keyboard"]
+            "features": ["Bluetooth", "Waterproof", "12-hour battery"],
+             "image": "produktbilleder/effektforstaerkere/manley_mahi.jpg"
           },
           {
-            "type": "Chromebook",
-            "brand": "Google",
-            "model": "Pixelbook Go",
+            "price": "$399",
+            "brand": "Sonos",
+            "model": "Beam",
             "year": 2021,
-            "features": ["Chrome OS", "12-hour Battery", "Lightweight Design"]
+            "features": ["Dolby Atmos", "Smart TV compatibility", "Voice control"],
+             "image": "produktbilleder/effektforstaerkere/manley_neoclassic300b.jpg"
+          },
+          {
+            "price": "$499",
+            "brand": "Klipsch",
+            "model": "RP-600M",
+            "year": 2020,
+            "features": ["Bookshelf speaker", "Cerametallic woofers", "Horn-loaded tweeters"],
+             "image": "produktbilleder/effektforstaerkere/parasound_haloa23.jpg"
           }
         ]
       },
@@ -84,79 +102,89 @@
         "category": "Headphones",
         "descriptors": [
           {
-            "type": "Over-Ear",
+            "price": "$299",
+            "brand": "Bose",
+            "model": "QuietComfort 35 II",
+            "year": 2019,
+            "features": ["Noise canceling", "Bluetooth", "Voice assistant"],
+             "image": "produktbilleder/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg"
+          },
+          {
+            "price": "$349",
             "brand": "Sony",
             "model": "WH-1000XM4",
             "year": 2020,
-            "features": ["Noise Canceling", "Bluetooth", "30-hour Battery"]
+            "features": ["Noise canceling", "Bluetooth", "30-hour battery"],
+             "image": "produktbilleder/forforstaerkere/parasound_classic7100.jpg"
           },
           {
-            "type": "In-Ear",
+            "price": "$129",
+            "brand": "Jabra",
+            "model": "Elite 75t",
+            "year": 2020,
+            "features": ["Noise canceling", "Bluetooth", "7.5-hour battery"],
+             "image": "produktbilleder/forforstaerkere/parasound_halop3.jpg"
+          },
+          {
+            "price": "$199",
             "brand": "Apple",
             "model": "AirPods Pro",
             "year": 2019,
-            "features": ["Active Noise Canceling", "Transparency Mode", "Water Resistant"]
+            "features": ["Noise canceling", "Bluetooth", "4.5-hour battery"],
+             "image": "produktbilleder/forforstaerkere/Project_prebox.jpg"
           },
           {
-            "type": "Over-Ear",
-            "brand": "Bose",
-            "model": "QuietComfort 35 II",
-            "year": 2017,
-            "features": ["Noise Canceling", "Alexa Enabled", "Comfortable Design"]
-          },
-          {
-            "type": "On-Ear",
-            "brand": "Beats",
-            "model": "Solo3",
-            "year": 2016,
-            "features": ["Fast Fuel Charging", "W1 Chip", "40-hour Battery"]
-          },
-          {
-            "type": "True Wireless",
-            "brand": "Samsung",
-            "model": "Galaxy Buds Pro",
-            "year": 2021,
-            "features": ["Active Noise Canceling", "IPX7 Water Resistance", "Wireless Charging"]
+            "price": "$229",
+            "brand": "Sennheiser",
+            "model": "Momentum 3",
+            "year": 2019,
+            "features": ["Noise canceling", "Bluetooth", "17-hour battery"],
+             "image": "produktbilleder/hojtalere/boesendorfer_vcs_wall.gif"
           }
         ]
       },
       {
-        "category": "Stereo Systems",
+        "category": "Laptops",
         "descriptors": [
           {
-            "type": "Home Stereo",
-            "brand": "Yamaha",
-            "model": "R-N303",
-            "year": 2018,
-            "features": ["Wi-Fi", "Bluetooth", "MusicCast"]
-          },
-          {
-            "type": "Portable Bluetooth Speaker",
-            "brand": "JBL",
-            "model": "Charge 5",
+            "price": "$999",
+            "brand": "Dell",
+            "model": "XPS 13",
             "year": 2021,
-            "features": ["20-hour Battery", "Waterproof", "Powerbank Function"]
+            "features": ["Intel i7", "16GB RAM", "512GB SSD"],
+             "image": "produktbilleder/hojtalere/epos_m5.gif"
           },
           {
-            "type": "Home Theater System",
-            "brand": "Sony",
-            "model": "HT-S350",
-            "year": 2019,
-            "features": ["2.1 Channel", "Wireless Subwoofer", "Bluetooth"]
-          },
-          {
-            "type": "Turntable Stereo",
-            "brand": "Audio-Technica",
-            "model": "AT-LP120X",
+            "price": "$1299",
+            "brand": "Apple",
+            "model": "MacBook Air M1",
             "year": 2020,
-            "features": ["Direct Drive", "USB Output", "Analog Output"]
+            "features": ["Apple M1 chip", "8GB RAM", "256GB SSD"],
+             "image": "produktbilleder/hojtalere/harbeth_hl7es2.jpg"
           },
           {
-            "type": "Bookshelf Speakers",
-            "brand": "Klipsch",
-            "model": "RP-600M",
-            "year": 2018,
-            "features": ["Tractrix Horn", "Dynamic Bass", "Bi-Wiring Capability"]
+            "price": "$899",
+            "brand": "HP",
+            "model": "Spectre x360",
+            "year": 2021,
+            "features": ["Intel i5", "8GB RAM", "256GB SSD"],
+             "image": "produktbilleder/hojtalere/harbeth_monitor30.jpg"
+          },
+          {
+            "price": "$1399",
+            "brand": "Microsoft",
+            "model": "Surface Laptop 4",
+            "year": 2021,
+            "features": ["Intel i7", "16GB RAM", "512GB SSD"],
+             "image": "produktbilleder/hojtalere/harbeth_p3es2.jpg"
+          },
+          {
+            "price": "$1199",
+            "brand": "Lenovo",
+            "model": "ThinkPad X1 Carbon",
+            "year": 2021,
+            "features": ["Intel i7", "16GB RAM", "512GB SSD"],
+             "image": "produktbilleder/int_forstaerkere/creek_a50I.jpg"
           }
         ]
       },
@@ -164,39 +192,44 @@
         "category": "Tablets",
         "descriptors": [
           {
-            "type": "Tablet",
+            "price": "$329",
             "brand": "Apple",
-            "model": "iPad Pro",
+            "model": "iPad 9th Gen",
             "year": 2021,
-            "features": ["M1 Chip", "Liquid Retina Display", "5G Support"]
+            "features": ["A13 Bionic chip", "64GB storage", "10.2-inch display"],
+             "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
-            "type": "Tablet",
+            "price": "$599",
             "brand": "Samsung",
             "model": "Galaxy Tab S7",
             "year": 2020,
-            "features": ["120Hz Display", "S Pen", "DeX Mode"]
+            "features": ["Snapdragon 865+", "128GB storage", "11-inch display"],
+             "image": "produktbilleder/int_forstaerkere/creek_destinyamp.jpg"
           },
           {
-            "type": "Tablet",
-            "brand": "Amazon",
-            "model": "Fire HD 10",
+            "price": "$399",
+            "brand": "Lenovo",
+            "model": "Tab P11",
             "year": 2021,
-            "features": ["Alexa Enabled", "10.1-inch Display", "USB-C"]
+            "features": ["Snapdragon 662", "128GB storage", "11-inch display"],
+             "image": "produktbilleder/int_forstaerkere/manley_snapper.jpg"
           },
           {
-            "type": "Tablet",
+            "price": "$749",
             "brand": "Microsoft",
-            "model": "Surface Go 2",
-            "year": 2020,
-            "features": ["10.5-inch Display", "Intel Pentium", "LTE Option"]
+            "model": "Surface Pro 7",
+            "year": 2019,
+            "features": ["Intel i5", "8GB RAM", "128GB SSD"],
+             "image": "produktbilleder/int_forstaerkere/Manley_Stingray.jpg"
           },
           {
-            "type": "E-Reader",
-            "brand": "Amazon",
-            "model": "Kindle Paperwhite",
-            "year": 2021,
-            "features": ["Waterproof", "Adjustable Warm Light", "6.8-inch Display"]
+            "price": "$429",
+            "brand": "Huawei",
+            "model": "MatePad Pro",
+            "year": 2020,
+            "features": ["Kirin 990", "128GB storage", "10.8-inch display"],
+             "image": "produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg"
           }
         ]
       }

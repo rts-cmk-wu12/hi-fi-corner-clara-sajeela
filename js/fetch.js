@@ -22,11 +22,13 @@ function displayCategories(categories) {
       const itemBox = document.createElement('div');
       itemBox.classList.add('item-box');
       itemBox.innerHTML = `
-        <h3>${descriptor.type}</h3>
-        <p>Brand: ${descriptor.brand}</p>
-        <p>Model: ${descriptor.model}</p>
-        <p>Year: ${descriptor.year}</p>
-        <p>Features: ${descriptor.features.join(', ')}</p>
+      <img src="${descriptor.image}" alt="${descriptor.type} image">
+      <p>Brand: ${descriptor.brand}</p>
+      <p>Model: ${descriptor.model}</p>
+      <p>Year: ${descriptor.year}</p>
+      <p>Features: ${descriptor.features.join(', ')}</p>
+      <h3>${descriptor.price}</h3>
+      <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">Add to Cart</button>
       `;
 
       // Append the item to the category wrapper
@@ -36,4 +38,9 @@ function displayCategories(categories) {
     // Append category wrapper to the container
     container.appendChild(categoryWrapper);
   });
+}
+
+function addToCart(productId) {
+  console.log(`Product ${productId} added to cart`);
+  window.location.href = '#.html'; //add specific product here
 }

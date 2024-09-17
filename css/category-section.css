@@ -1,18 +1,20 @@
 .category-main {
-    background-color: black; 
+    background-color: black;
     width: 100%;
 }
 
 .grid-container {
     display: grid;
     grid-template-areas: "home-amplifyers home-amplifyers home-amplifyers"
-    "left-sidebar right-sidebar main-content ";
-    grid-template-columns: 1fr  3fr 1fr;
+        "left-sidebar right-sidebar main-content ";
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto 1fr;
     padding: 20px;
     gap: 20px;
     background-color: white;
-   
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 
 .categorydiv {
@@ -24,13 +26,13 @@
 .home-amplifyers {
     grid-column: 1 / -1;
     grid-area: home-amplifyers;
-    font-size: 16px; 
+    font-size: 16px;
     padding: 10px;
-    
+
 }
 
 .home-amplifyers a {
-    text-decoration: none; 
+    text-decoration: none;
     color: #333;
 }
 
@@ -42,14 +44,16 @@
 .left-sidebar {
     width: 100%;
     padding: 20px;
-    box-sizing: border-box; 
-    background-color: lightgray; 
+    box-sizing: border-box;
+
 }
+
 .left-sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .left-sidebar ul a {
     text-decoration: none;
     display: block;
@@ -64,14 +68,16 @@
 
 /* Style for the right sidebar */
 .right-sidebar {
-    width: 100%; 
+    width: 100%;
     padding: 20px;
 }
+
 .right-sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .right-sidebar ul a {
     text-decoration: none;
     display: block;
@@ -87,9 +93,12 @@
 .category-nav-1 {
     margin-bottom: 20px;
 }
-.category-nav-1, .category-nav-2 {
-    width: 100%; 
+
+.category-nav-1,
+.category-nav-2 {
+    width: 100%;
     padding: 20px;
+    background-color: lightgray;
 
 }
 
@@ -116,22 +125,27 @@
 .category-wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
-    width: 100%; 
+    width: 100%;
 }
 
 
 /* Box for each item */
 .item-box {
-    flex: 1; 
+    flex: 1;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 30px;
     background-color: #f9f9f9;
     text-align: center;
     box-sizing: border-box;
-    min-width: 200px; 
+    min-width: 200px;
+   
 }
 
-
-
-
+.add-to-cart-button {
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 5px;
+}

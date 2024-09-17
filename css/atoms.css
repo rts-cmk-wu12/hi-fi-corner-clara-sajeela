@@ -3,3 +3,10 @@
     font-size: small;
 }
 
+.p {
+    color: black;
+    font-size: small; 
+    font-weight: bold;
+    padding: 5px;
+}
+

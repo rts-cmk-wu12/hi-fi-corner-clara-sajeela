@@ -1,0 +1,205 @@
+{
+    "technology_categories": [
+      {
+        "category": "Phones",
+        "descriptors": [
+          {
+            "type": "Smartphone",
+            "brand": "Apple",
+            "model": "iPhone 13",
+            "year": 2021,
+            "features": ["Face ID", "5G", "OLED Display"]
+          },
+          {
+            "type": "Smartphone",
+            "brand": "Samsung",
+            "model": "Galaxy S21",
+            "year": 2021,
+            "features": ["Triple Camera", "120Hz Display", "5G"]
+          },
+          {
+            "type": "Smartphone",
+            "brand": "Google",
+            "model": "Pixel 6",
+            "year": 2021,
+            "features": ["Google Tensor", "5G", "90Hz OLED Display"]
+          },
+          {
+            "type": "Smartphone",
+            "brand": "OnePlus",
+            "model": "OnePlus 9 Pro",
+            "year": 2021,
+            "features": ["Hasselblad Camera", "5G", "120Hz Display"]
+          },
+          {
+            "type": "Feature Phone",
+            "brand": "Nokia",
+            "model": "3310",
+            "year": 2000,
+            "features": ["SMS", "Snake Game", "Long Battery Life"]
+          }
+        ]
+      },
+      {
+        "category": "Laptops",
+        "descriptors": [
+          {
+            "type": "Gaming Laptop",
+            "brand": "Razer",
+            "model": "Blade 15",
+            "year": 2022,
+            "features": ["NVIDIA RTX 3080", "144Hz Display", "RGB Keyboard"]
+          },
+          {
+            "type": "Ultrabook",
+            "brand": "Apple",
+            "model": "MacBook Air M1",
+            "year": 2020,
+            "features": ["M1 Chip", "Retina Display", "Fanless Design"]
+          },
+          {
+            "type": "Business Laptop",
+            "brand": "Lenovo",
+            "model": "ThinkPad X1 Carbon",
+            "year": 2021,
+            "features": ["Carbon Fiber", "Fingerprint Reader", "14-inch Display"]
+          },
+          {
+            "type": "2-in-1 Laptop",
+            "brand": "Microsoft",
+            "model": "Surface Pro 7",
+            "year": 2019,
+            "features": ["Touchscreen", "Kickstand", "Detachable Keyboard"]
+          },
+          {
+            "type": "Chromebook",
+            "brand": "Google",
+            "model": "Pixelbook Go",
+            "year": 2021,
+            "features": ["Chrome OS", "12-hour Battery", "Lightweight Design"]
+          }
+        ]
+      },
+      {
+        "category": "Headphones",
+        "descriptors": [
+          {
+            "type": "Over-Ear",
+            "brand": "Sony",
+            "model": "WH-1000XM4",
+            "year": 2020,
+            "features": ["Noise Canceling", "Bluetooth", "30-hour Battery"]
+          },
+          {
+            "type": "In-Ear",
+            "brand": "Apple",
+            "model": "AirPods Pro",
+            "year": 2019,
+            "features": ["Active Noise Canceling", "Transparency Mode", "Water Resistant"]
+          },
+          {
+            "type": "Over-Ear",
+            "brand": "Bose",
+            "model": "QuietComfort 35 II",
+            "year": 2017,
+            "features": ["Noise Canceling", "Alexa Enabled", "Comfortable Design"]
+          },
+          {
+            "type": "On-Ear",
+            "brand": "Beats",
+            "model": "Solo3",
+            "year": 2016,
+            "features": ["Fast Fuel Charging", "W1 Chip", "40-hour Battery"]
+          },
+          {
+            "type": "True Wireless",
+            "brand": "Samsung",
+            "model": "Galaxy Buds Pro",
+            "year": 2021,
+            "features": ["Active Noise Canceling", "IPX7 Water Resistance", "Wireless Charging"]
+          }
+        ]
+      },
+      {
+        "category": "Stereo Systems",
+        "descriptors": [
+          {
+            "type": "Home Stereo",
+            "brand": "Yamaha",
+            "model": "R-N303",
+            "year": 2018,
+            "features": ["Wi-Fi", "Bluetooth", "MusicCast"]
+          },
+          {
+            "type": "Portable Bluetooth Speaker",
+            "brand": "JBL",
+            "model": "Charge 5",
+            "year": 2021,
+            "features": ["20-hour Battery", "Waterproof", "Powerbank Function"]
+          },
+          {
+            "type": "Home Theater System",
+            "brand": "Sony",
+            "model": "HT-S350",
+            "year": 2019,
+            "features": ["2.1 Channel", "Wireless Subwoofer", "Bluetooth"]
+          },
+          {
+            "type": "Turntable Stereo",
+            "brand": "Audio-Technica",
+            "model": "AT-LP120X",
+            "year": 2020,
+            "features": ["Direct Drive", "USB Output", "Analog Output"]
+          },
+          {
+            "type": "Bookshelf Speakers",
+            "brand": "Klipsch",
+            "model": "RP-600M",
+            "year": 2018,
+            "features": ["Tractrix Horn", "Dynamic Bass", "Bi-Wiring Capability"]
+          }
+        ]
+      },
+      {
+        "category": "Tablets",
+        "descriptors": [
+          {
+            "type": "Tablet",
+            "brand": "Apple",
+            "model": "iPad Pro",
+            "year": 2021,
+            "features": ["M1 Chip", "Liquid Retina Display", "5G Support"]
+          },
+          {
+            "type": "Tablet",
+            "brand": "Samsung",
+            "model": "Galaxy Tab S7",
+            "year": 2020,
+            "features": ["120Hz Display", "S Pen", "DeX Mode"]
+          },
+          {
+            "type": "Tablet",
+            "brand": "Amazon",
+            "model": "Fire HD 10",
+            "year": 2021,
+            "features": ["Alexa Enabled", "10.1-inch Display", "USB-C"]
+          },
+          {
+            "type": "Tablet",
+            "brand": "Microsoft",
+            "model": "Surface Go 2",
+            "year": 2020,
+            "features": ["10.5-inch Display", "Intel Pentium", "LTE Option"]
+          },
+          {
+            "type": "E-Reader",
+            "brand": "Amazon",
+            "model": "Kindle Paperwhite",
+            "year": 2021,
+            "features": ["Waterproof", "Adjustable Warm Light", "6.8-inch Display"]
+          }
+        ]
+      }
+    ]
+  }
+  

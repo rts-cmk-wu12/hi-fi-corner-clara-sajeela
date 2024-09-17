@@ -6,6 +6,7 @@
     <title>category-list</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="js/fetch.js" defer></script>
    
  
 </head>
@@ -59,41 +60,56 @@
 
         </section>
     
-    <div class="category-wrapper">
-        <div class="home-amplifyers">
-            <a href="index.html">Home</a> / <a href="#">Amplifiers</a>
-       
-
-    <aside class="sidebar">
-        <nav class="category-nav-1">
-            <ul>
-                <li><a href="#">Nav Item 1</a></li>
-                <li><a href="#">Nav Item 2</a></li>
-                <li><a href="#">Nav Item 3</a></li>
-                <li><a href="#">Nav Item 4</a></li>
-            </ul>
-        </nav>
-
-        <nav class="category-nav-2">
-            <ul>
-                <li><a href="#">Nav Item 1</a></li>
-                <li><a href="#">Nav Item 2</a></li>
-                <li><a href="#">Nav Item 3</a></li>
-                <li><a href="#">Nav Item 4</a></li>
-            </ul>
-        </nav>
-     </aside>
- </div>
-     <section>
-        <h1>
-            AMPLIFYERS
-        </h1>
-
-  
-     </section>
-
-  </div>
-    </main>
+        <main class="category-main"> <!---main starter--->
+            <section class="categorydiv">
+                <!-- This can be for any top banner or introductory content -->
+            </section>
+            
+            <div class="grid-container">
+                <div class="home-amplifyers">
+                    <a href="index.html">Home</a> / <a href="#">Amplifiers</a>
+                </div>
+        
+                <section class="left-sidebar"> <!---left sidebar-->
+                    <nav class="category-nav-1">
+                        <ul>
+                            <li><a href="#">Nav Item 1</a></li>
+                            <li><a href="#">Nav Item 2</a></li>
+                            <li><a href="#">Nav Item 3</a></li>
+                            <li><a href="#">Nav Item 4</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="category-nav-2">
+                        <ul>
+                            <li><a href="#">Nav Item 1</a></li>
+                            <li><a href="#">Nav Item 2</a></li>
+                            <li><a href="#">Nav Item 3</a></li>
+                            <li><a href="#">Nav Item 4</a></li>
+                        </ul>
+                    </nav>
+                </section>
+        
+                <section class="main-content">
+                    <div id="content-container"> <!---main content populated by fetch.js--->
+                    </div>
+                </section>
+        
+                <section class="right-sidebar"> <!---right sidebar--->
+                    <h1 class="h1">MANUFACTURER</h1>
+                    <ul>
+                        <li>ARCAM</li>
+                        <li>ASTELL AND KERN</li>
+                        <li>ATC</li>
+                        <li>AUDIOLAB</li>
+                        <li>AVID</li>
+                        <li>CHORD ELECTRONICS</li>
+                        <li>CLASSÈ</li>
+                    </ul>
+                    <p class="h1">View All</p>
+                </section>
+            </div>
+        </main>
+        
 
 
     <footer> <!-- Footer starter -->

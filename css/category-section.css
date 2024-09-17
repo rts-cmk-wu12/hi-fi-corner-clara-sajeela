@@ -1,28 +1,32 @@
 .category-main {
-    background-color: black;
-  
-  
+    background-color: black; 
+    width: 100%;
 }
 
-.category-wrapper {
-    display: flex;
+.grid-container {
+    display: grid;
+    grid-template-areas: "home-amplifyers home-amplifyers home-amplifyers"
+    "left-sidebar right-sidebar main-content ";
+    grid-template-columns: 1fr  3fr 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 20px;
+    gap: 20px;
     background-color: white;
-     margin-left: 150px;
-    margin-right: 150px; 
-
+   
 }
-
 
 .categorydiv {
-    height: 150px;
+    height: 100px;
     width: 100vw;
     background-color: black;
 }
 
-
 .home-amplifyers {
+    grid-column: 1 / -1;
+    grid-area: home-amplifyers;
     font-size: 16px; 
-    padding: 30px;
+    padding: 10px;
+    
 }
 
 .home-amplifyers a {
@@ -35,52 +39,99 @@
 }
 
 /*------ nav------*/
-.sidebar {
-    margin: 10px;
+.left-sidebar {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; 
+    background-color: lightgray; 
 }
-
-.sidebar ul {
-    list-style-type: none; 
+.left-sidebar ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
-.sidebar li {
-    margin-bottom: 10px; 
-}
-
-.sidebar a {
-    text-decoration: none; 
-    color: #333;
+.left-sidebar ul a {
+    text-decoration: none;
     display: block;
-    padding: 10px; 
-}
-
-.sidebar a:hover {
-    background-color: #ddd; 
-    border-radius: 4px; 
+    padding: 10px;
 }
 
 
+.left-sidebar a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
 
+/* Style for the right sidebar */
+.right-sidebar {
+    width: 100%; 
+    padding: 20px;
+}
+.right-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.right-sidebar ul a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.right-sidebar a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+/* Styling for navigation sections */
 .category-nav-1 {
-     background-color: lightgray;
-    margin: 20px;
-    width: 200px; 
-    padding: 20px; 
-    top: 50px; 
-    left: 0; 
-    height: calc(100vh - 50px); 
+    margin-bottom: 20px;
+}
+.category-nav-1, .category-nav-2 {
+    width: 100%; 
+    padding: 20px;
+
 }
 
-.category-nav-2 {
-    background-color: lightgray;
-   margin: 20px;
-   width: 200px; 
-   padding: 20px; 
-   top: 50px; 
-   left: 0; 
-   height: calc(100vh - 50px); 
+/*main content*/
+.main-content {
+    grid-area: right-sidebar;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-width: 100%;
+
+
+}
+
+/*-------- CSS for fetch.js ---------*/
+
+#content-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.category-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%; 
+}
+
+
+/* Box for each item */
+.item-box {
+    flex: 1; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 200px; 
 }
 
 

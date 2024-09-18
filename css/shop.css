@@ -1,9 +1,17 @@
+#wrapper{
+   background-color: black;
+}
+.section__line {
+ 
+color:#cfa739;
+margin-bottom: 1em;
 
+}
 
 .page__items{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  
+  padding-top: 8.5em;
     margin: auto 12em;
 }
 .page__image{
@@ -28,12 +36,12 @@ background-color: #a39161;
 }
 .info a {
     color: white;
-padding-left: 4em;
+padding-left: 3em;
 }
 
 .sumit{
     background-color: #685255;
     color:white;
     border: #685255;
-    
+    padding: 2em 2em;
 }

@@ -58,7 +58,7 @@ function displayCategoryItems(category) {
 
 function addToCart(productId) {
     console.log(`Product ${productId} added to cart`);
-    window.location.href = '#.html';
+    window.location.href = '#.html'; // add product specification here
 }
 
 

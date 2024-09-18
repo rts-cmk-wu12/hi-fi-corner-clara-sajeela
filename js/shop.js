@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Loop through each link and add an event listener
     categoryLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default anchor behavior
+            event.preventDefault(); // Prevent default behavior
             
             const category = this.getAttribute('data-category'); // Get the category from the data-category attribute
             

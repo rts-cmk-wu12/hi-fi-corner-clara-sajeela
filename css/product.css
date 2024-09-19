@@ -34,7 +34,7 @@ height: 20%;
 
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 15px auto;
     padding: 0 15px;
 }
@@ -45,17 +45,23 @@ height: 20%;
     background-color: white;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
 }
 
 .left-column {
     flex: 1;
-    padding-top: 10em;
+    
+}
+.product-image{
+    border: 1px solid rgb(243, 243, 243);
+    margin-top: 1em;
 }
 
 .product-image img {
-    max-width: 350px;
-    margin-bottom: 20px;
+    max-width: 400px;
+    margin-bottom: 18px;
     height: 150px;
+    padding: 10em 1.5em;
 }
 
 .more-views {
@@ -146,7 +152,25 @@ box-shadow:none;
     
 }
 /************form*******************************/
-
+.form{
+   
+        max-width: 600px;
+        margin: auto;
+        border: 1px solid #e1e1e1;
+        padding: 15px;
+       
+    }
+     .finish {
+        font-size: x-small;
+    }
+    .required {
+        color: red;
+        
+    }
+     .required__red{
+        padding-left: 22em;
+        font-size: small;
+    }
 
 .product-form {
     margin-bottom: 40px;
@@ -156,25 +180,29 @@ label {
     font-weight: bold;
 }
 
-.required {
-    color: red;
-}
 
 .quantity {
     margin: 20px 0;
+    display: flex;
+    gap: 0.5em;
+    background-color:lightgray;
+    height:50px ;
+
 }
 
 input[type="number"] {
-    width: 50px;
+    width: 20px;
+    
 }
 
 .add-to-cart {
-    background-color: #d4af37;
+   
     border: none;
-    padding: 10px 20px;
+    background-color:#cbb28e ;
+    padding: 0.5em 0.6em;
     color: #fff;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 .paypal-button {

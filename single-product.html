@@ -12,11 +12,10 @@
 <body>
 
     <div class="wrapper">
-
         <div class="breadcrumb">
             <a href="#">Home</a> / <a href="#">Amplifiers</a> / Marantz PM6006 UK Edition Integrated Amplifier
         </div>
-
+        
         <div class="product__reklamer">
             <img class="product__visit" src="images/Hi-Fi_slider2.jpg">
         </div>
@@ -24,8 +23,11 @@
             <section class="product-section">
                 <div class="left-column">
                     <div class="product-image">
-                        <img src="images/amplifir.jpg" alt="Marantz PM6006 UK Edition Amplifier">
+                        
                     </div>
+                    <div id="product-image-container">  <!---- product image populated by single-product.js----->
+                                    
+                      
                     <div class="more-views">
                         <h4>MORE VIEWS</h4>
                         <div class="more__product">
@@ -40,7 +42,7 @@
                 </div>
 
                 <div class="right-column">
-                    <h2 class="product__heading">Marantz PM6006 UK Edition Integrated Amplifier</h2>
+                    <h2 class="product__heading" id="product-title"></h2> <!---- product title populated by single-product.js----->
 
                     <div class="price">
                         <div>
@@ -55,10 +57,7 @@
                         </div>
 
                     </div>
-                    <p class="product__information">The PM6006 is an upgraded successor of the multi-awad winning PM6005 Marantz retained the pre-amp and<br>
-                    power-amp sections that exclusively feature discreat componenets-not a single IC sight of the signal path.The<br>
-                PM6006 is upgraded for peak curent at the amplifir stage, which make it possible to refine the sound for you in<br>
-            much more detail. </p>
+                    <div class="product__information" id="product-container"> </div> <!---- product details populated by single-product.js----->
             <div class="product__button" >
 <button class="sumit__button"> <a class="product__link" href="#">ASK A QUESTION</a></button>
 <button class="sumit__button"><a class="product__link" href="#"> PART EXCHANGE</a></button>

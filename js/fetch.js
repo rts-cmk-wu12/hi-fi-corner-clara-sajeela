@@ -41,24 +41,26 @@ function displayCategoryItems(category) {
         const itemBox = document.createElement('div');
         itemBox.classList.add('item-box');
         itemBox.innerHTML = `
-        <img src="${descriptor.image}" alt="${descriptor.model} image">
-        <p>Brand: ${descriptor.brand}</p>
-        <p>Model: ${descriptor.model}</p>
-        <p>Year: ${descriptor.year}</p>
-        <p>Features: ${descriptor.features.join(', ')}</p>
-        <h3>${descriptor.price}</h3>
-        <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">Add to Cart</button>
+            <img src="${descriptor.image}" alt="${descriptor.model} image">
+            <p>Brand: ${descriptor.brand}</p>
+            <p>Model: ${descriptor.model}</p>
+            <p>Year: ${descriptor.year}</p>
+            <p>Features: ${descriptor.features.join(', ')}</p>
+            <h3>${descriptor.price}</h3>
+            <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">Add to cart</button>
         `;
-        
+    
         categoryWrapper.appendChild(itemBox);
     });
+    
 
     container.appendChild(categoryWrapper);
 }
 
 function addToCart(productId) {
-    console.log(`Product ${productId} added to cart`);
-    window.location.href = '#.html'; // add product specification here
+    console.log(`Product ${productId} clicked`);
+    // Redirect to single-product.html with the product ID as a query parameter
+    window.location.href = `single-product.html?productId=${productId}`;
 }
 
 

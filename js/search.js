@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('categories.json')
         .then(response => response.json())
         .then(data => {
-            categories = data.technology_categories; // Adjust if the structure is different
+            categories = data.technology_categories; 
             setupSearch();
         })
         .catch(error => console.error('Error fetching JSON:', error));
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Optionally, trigger search on pressing Enter
+        // Enter
         document.getElementById('search-input').addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 searchButton.click();

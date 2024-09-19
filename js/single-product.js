@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Read productId from URL query parameters
+    // Read productId from URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('productId');
 
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayProduct(categories, productId) {
     const productTitle = document.getElementById('product-title');
     const productContainer = document.getElementById('product-container');
-    const productImage = document.getElementById('product-image-container');
+    const productImage = document.getElementById('product-image'); // Reference the img element
     
     // Find the product in the categories
     let product = null;
@@ -27,14 +27,15 @@ function displayProduct(categories, productId) {
     }
 
     if (product) {
-        // Set the product title
+        // Product title
         productTitle.textContent = `${product.brand} ${product.model}`;
 
-        // Set the product image
-        productImage.src = product.image;
+        // Product image
+        
+        productImage.src = product.image; // Matches the path in json
         productImage.alt = `${product.brand} ${product.model} image`;
 
-        // Set the product details
+        // Product details
         productContainer.innerHTML = `
             <p>Brand: ${product.brand}</p>
             <p>Model: ${product.model}</p>
@@ -45,7 +46,8 @@ function displayProduct(categories, productId) {
     } else {
         productTitle.textContent = 'Product not found';
         productContainer.innerHTML = '';
-        productImage.src = '';
+        productImage.src = ''; // Clear src if not found
         productImage.alt = '';
     }
 }
+

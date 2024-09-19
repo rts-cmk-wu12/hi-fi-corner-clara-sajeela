@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Read category from URL query parameters
+    // Category from URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const categoryName = urlParams.get('category');
 
@@ -27,16 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayCategoryItems(category) {
     const container = document.getElementById('content-container');
     
-    // Create category heading
+    // Category heading
     const categoryHeading = document.createElement('h2');
     categoryHeading.textContent = category.category;
     container.appendChild(categoryHeading);
 
-    // Create a wrapper for the category content
+    // Wrapper for the category content
     const categoryWrapper = document.createElement('div');
     categoryWrapper.classList.add('category-wrapper');
 
-    // Add items to the category wrapper
+    // Items in the category wrapper
     category.descriptors.forEach(descriptor => {
         const itemBox = document.createElement('div');
         itemBox.classList.add('item-box');

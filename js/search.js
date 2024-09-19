@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     displayCategories(categories);
 });
 
+
 function displayCategories(categories) {
     const container = document.getElementById('search-results');
 
@@ -82,7 +83,7 @@ function displayCategories(categories) {
                 <p>Year: ${descriptor.year}</p>
                 <p>Features: ${descriptor.features.join(', ')}</p>
                 <h3>${descriptor.price}</h3>
-                <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">Add to Cart</button>
+                <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">View Product</button>
             `;
 
             // Append the item to the category wrapper
@@ -94,9 +95,5 @@ function displayCategories(categories) {
     });
 }
 
-function addToCart(productId) {
-    console.log(`Product ${productId} added to cart`);
-    // Implement the logic to handle adding to cart here
-}
 
 

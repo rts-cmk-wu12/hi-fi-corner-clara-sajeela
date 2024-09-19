@@ -1,54 +1,51 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Get the productId from the query parameters
+    // Read productId from URL query parameters
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('productId');
 
     if (!productId) {
-        document.getElementById('product-title').textContent = 'Product not found';
+        document.getElementById('product-title').textContent = 'Product not specified';
         return;
     }
 
-    // Fetch the categories JSON data
     fetch('categories.json')
         .then(response => response.json())
-        .then(data => {
-            const product = findProductById(data.technology_categories, productId);
-            if (product) {
-                displayProductDetails(product);
-            } else {
-                document.getElementById('product-title').textContent = 'Product not found';
-            }
-        })
-        .catch(error => console.error('Error fetching product data:', error));
+        .then(data => displayProduct(data.technology_categories, productId))
+        .catch(error => console.error('Error fetching JSON:', error));
 });
 
-// Helper function to find the product by ID
-function findProductById(categories, id) {
+function displayProduct(categories, productId) {
+    const productTitle = document.getElementById('product-title');
+    const productContainer = document.getElementById('product-container');
+    const productImage = document.getElementById('product-image-container');
+    
+    // Find the product in the categories
+    let product = null;
     for (const category of categories) {
-        for (const descriptor of category.descriptors) {
-            if (descriptor.id === parseInt(id)) {
-                return descriptor;
-            }
-        }
+        product = category.descriptors.find(descriptor => descriptor.id == productId);
+        if (product) break;
     }
-    return null;
-}
 
-// Display the product details on the page
-function displayProductDetails(product) {
-    const container = document.getElementById('product-container');
-    container.innerHTML = `
-        <img src="${product.image}" alt="${product.model} image">
-        <p><strong>Brand:</strong> ${product.brand}</p>
-        <p><strong>Model:</strong> ${product.model}</p>
-        <p><strong>Year:</strong> ${product.year}</p>
-        <p><strong>Features:</strong> ${product.features.join(', ')}</p>
-        <h3>Price: ${product.price}</h3>
-        <button class="add-to-cart-button" onclick="addToCart(${product.id})">Add to Cart</button>
-    `;
-}
+    if (product) {
+        // Set the product title
+        productTitle.textContent = `${product.brand} ${product.model}`;
 
-function addToCart(productId) {
-    console.log(`Product ${productId} added to cart`);
-    // Add functionality for adding to cart here
+        // Set the product image
+        productImage.src = product.image;
+        productImage.alt = `${product.brand} ${product.model} image`;
+
+        // Set the product details
+        productContainer.innerHTML = `
+            <p>Brand: ${product.brand}</p>
+            <p>Model: ${product.model}</p>
+            <p>Year: ${product.year}</p>
+            <p>Features: ${product.features.join(', ')}</p>
+            <h3>${product.price}</h3>
+        `;
+    } else {
+        productTitle.textContent = 'Product not found';
+        productContainer.innerHTML = '';
+        productImage.src = '';
+        productImage.alt = '';
+    }
 }

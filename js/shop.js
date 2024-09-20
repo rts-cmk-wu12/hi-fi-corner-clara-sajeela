@@ -14,3 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+//get all categories
+document.getElementById('shop-now-btn').addEventListener('click', function () {
+    // Redirect to category-list.html 
+    window.location.href = 'category-list.html?show=all';
+});
+
+
+

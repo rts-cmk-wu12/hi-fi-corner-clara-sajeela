@@ -1,42 +1,88 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Category from URL parameters
+    // Get URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const categoryName = urlParams.get('category');
+    const showAll = urlParams.get('show');
 
-    if (!categoryName) {
-        document.getElementById('category-title').textContent = 'Category not specified';
-        return;
+    // If the "show=all" parameter is present, show all categories
+    if (showAll === 'all') {
+        fetch('categories.json')
+            .then(response => response.json())
+            .then(data => {
+                displayAllCategories(data.technology_categories);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    } 
+    // If a specific category is in the URL, display that category
+    else if (categoryName) {
+        fetch('categories.json')
+            .then(response => response.json())
+            .then(data => {
+                const matchedCategory = data.technology_categories.find(cat => cat.category.toLowerCase() === categoryName.toLowerCase());
+                if (matchedCategory) {
+                    displayCategoryItems(matchedCategory);
+                } else {
+                    document.getElementById('category-title').textContent = 'Category not found';
+                }
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    } else {
+        document.getElementById('category-title').textContent = 'No category specified or found';
     }
-
-    // Fetch categories JSON
-    fetch('categories.json')
-        .then(response => response.json())
-        .then(data => {
-            // Filter and display only the category that matches the URL parameter
-            const matchedCategory = data.technology_categories.find(cat => cat.category.toLowerCase() === categoryName.toLowerCase());
-            
-            if (matchedCategory) {
-                displayCategoryItems(matchedCategory);
-            } else {
-                document.getElementById('category-title').textContent = 'Category not found';
-            }
-        })
-        .catch(error => console.error('Error fetching JSON:', error));
 });
 
+// Function to display all categories
+function displayAllCategories(categories) {
+    const container = document.getElementById('content-container');
+    container.innerHTML = ''; // Clear the container
+
+    categories.forEach(category => {
+        // Create a heading for each category
+        const categoryHeading = document.createElement('h2');
+        categoryHeading.textContent = category.category;
+        container.appendChild(categoryHeading);
+
+        // Create a wrapper for the category items
+        const categoryWrapper = document.createElement('div');
+        categoryWrapper.classList.add('category-wrapper');
+
+        // Display all items in the category
+        category.descriptors.forEach(descriptor => {
+            const itemBox = document.createElement('div');
+            itemBox.classList.add('item-box');
+            itemBox.innerHTML = `
+              <img src="${descriptor.image}" alt="${descriptor.model} image">
+              <p>Brand: ${descriptor.brand}</p>
+              <p>Model: ${descriptor.model}</p>
+              <p>Year: ${descriptor.year}</p>
+              <p>Features: ${descriptor.features.join(', ')}</p>
+              <h3>${descriptor.price}</h3>
+              <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">View Product</button>
+            `;
+            categoryWrapper.appendChild(itemBox);
+        });
+
+        container.appendChild(categoryWrapper);
+    });
+}
+
+// Function to display a specific category
 function displayCategoryItems(category) {
     const container = document.getElementById('content-container');
     
-    // Category heading
+    // Clear previous content
+    container.innerHTML = ''; 
+
+    // Create a heading for the category
     const categoryHeading = document.createElement('h2');
     categoryHeading.textContent = category.category;
     container.appendChild(categoryHeading);
 
-    // Wrapper for the category content
+    // Wrapper for the items in this category
     const categoryWrapper = document.createElement('div');
     categoryWrapper.classList.add('category-wrapper');
 
-    // Items in the category wrapper
+    // Display all items
     category.descriptors.forEach(descriptor => {
         const itemBox = document.createElement('div');
         itemBox.classList.add('item-box');
@@ -47,22 +93,15 @@ function displayCategoryItems(category) {
           <p>Year: ${descriptor.year}</p>
           <p>Features: ${descriptor.features.join(', ')}</p>
           <h3>${descriptor.price}</h3>
-         <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">View Product</button>
-         `;
-    
+          <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">View Product</button>
+        `;
         categoryWrapper.appendChild(itemBox);
     });
-    
 
     container.appendChild(categoryWrapper);
 }
 
 function addToCart(productId) {
-
     console.log(`Product ${productId} selected`);
-    // Redirect to single-product.html with the productId 
-    window.location.href = `../single-product.html?productId=${productId}`;
+    window.location.href = `single-product.html?productId=${productId}`;
 }
-
-
-

@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoriesJSON = urlParams.get('categories');
 
     if (!categoriesJSON) {
-        document.getElementById('category-title').textContent = 'No categories found';
+        document.getElementById('category-title').textContent = 'Categories';
         return;
     }
 

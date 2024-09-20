@@ -165,12 +165,13 @@
     width: 100%;
     padding: 10px;
     display: flex;
+    justify-content: space-between;
+    
 }
 
 .sort-by select {
     width: 50px;
-    font-size: 10px;
-    
+    font-size: 10px;   
 }
 
 .sort-by-p {
@@ -180,4 +181,6 @@
 
 .sort-by-footer {
    grid-area: sort-by-footer;
+   margin-left: 250px;
+   width: 650px;
 }

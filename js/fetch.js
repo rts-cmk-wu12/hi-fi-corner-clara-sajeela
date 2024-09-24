@@ -51,20 +51,28 @@ function displayAllCategories(categories) {
             const itemBox = document.createElement('div');
             itemBox.classList.add('item-box');
             itemBox.innerHTML = `
-              <img src="${descriptor.image}" alt="${descriptor.model} image">
-              <p>Brand: ${descriptor.brand}</p>
-              <p>Model: ${descriptor.model}</p>
-              <p>Year: ${descriptor.year}</p>
-              <p>Features: ${descriptor.features.join(', ')}</p>
-              <h3>${descriptor.price}</h3>
-              <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">View Product</button>
+                <img src="${descriptor.image}" alt="${descriptor.model} image">
+                <p>Brand: ${descriptor.brand}</p>
+                <p>Model: ${descriptor.model}</p>
+                <p>Year: ${descriptor.year}</p>
+                <p>Features: ${descriptor.features.join(', ')}</p>
+                <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">Add to cart</button>
             `;
+
+            // Append itemBox to categoryWrapper
             categoryWrapper.appendChild(itemBox);
+
+            // Now target the placeholder to insert the price
+            const pricePlaceholder = document.getElementById(`price-placeholder-${descriptor.id}`);
+            if (pricePlaceholder) {
+                pricePlaceholder.innerHTML = `<h3>${descriptor.price}</h3>`; // Set the price HTML
+            }
         });
 
         container.appendChild(categoryWrapper);
     });
 }
+
 
 // Function to display a specific category
 function displayCategoryItems(category) {

@@ -105,3 +105,5 @@ function addToCart(productId) {
     console.log(`Product ${productId} selected`);
     window.location.href = `single-product.html?productId=${productId}`;
 }
+
+

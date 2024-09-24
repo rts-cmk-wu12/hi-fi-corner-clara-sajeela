@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayProduct(categories, productId) {
     const productTitle = document.getElementById('product-title');
     const productContainer = document.getElementById('product-container');
-    const productImage = document.getElementById('product-image'); // Reference the img element
+    const productImage = document.getElementById('product-image'); 
     
     // Find the product in the categories
     let product = null;

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryName = urlParams.get('category');
     const showAll = urlParams.get('show');
 
-    // If the "show=all" parameter is present, show all categories
+    // If "show=all" parameter is present, show all categories
     if (showAll === 'all') {
         fetch('categories.json')
             .then(response => response.json())
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => console.error('Error fetching JSON:', error));
     } 
-    // If a specific category is in the URL, display that category
+    // If a category is in the URL, display that category
     else if (categoryName) {
         fetch('categories.json')
             .then(response => response.json())
@@ -34,15 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to display all categories
 function displayAllCategories(categories) {
     const container = document.getElementById('content-container');
-    container.innerHTML = ''; // Clear the container
+    container.innerHTML = ''; // Clear container
 
     categories.forEach(category => {
-        // Create a heading for each category
+        // Heading for each category
         const categoryHeading = document.createElement('h2');
         categoryHeading.textContent = category.category;
         container.appendChild(categoryHeading);
 
-        // Create a wrapper for the category items
+        // Wrapper for the category items
         const categoryWrapper = document.createElement('div');
         categoryWrapper.classList.add('category-wrapper');
 
@@ -59,13 +59,13 @@ function displayAllCategories(categories) {
                 <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">Add to cart</button>
             `;
 
-            // Append itemBox to categoryWrapper
+            // Appends itemBox to categoryWrapper
             categoryWrapper.appendChild(itemBox);
 
-            // Now target the placeholder to insert the price
+            // Insert price
             const pricePlaceholder = document.getElementById(`price-placeholder-${descriptor.id}`);
             if (pricePlaceholder) {
-                pricePlaceholder.innerHTML = `<h3>${descriptor.price}</h3>`; // Set the price HTML
+                pricePlaceholder.innerHTML = `<h3>${descriptor.price}</h3>`; 
             }
         });
 
@@ -74,14 +74,14 @@ function displayAllCategories(categories) {
 }
 
 
-// Function to display a specific category
+// Specific category
 function displayCategoryItems(category) {
     const container = document.getElementById('content-container');
     
-    // Clear previous content
+    // Clears previous content
     container.innerHTML = ''; 
 
-    // Create a heading for the category
+    // Heading for the category
     const categoryHeading = document.createElement('h2');
     categoryHeading.textContent = category.category;
     container.appendChild(categoryHeading);

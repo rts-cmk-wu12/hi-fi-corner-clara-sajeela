@@ -32,7 +32,7 @@ function displayProduct(categories, productId) {
 
         // Product image
         
-        productImage.src = product.image; // Matches the path in json
+        productImage.src = product.image; // Matches json
         productImage.alt = `${product.brand} ${product.model} image`;
 
         // Product details
@@ -46,7 +46,7 @@ function displayProduct(categories, productId) {
     } else {
         productTitle.textContent = 'Product not found';
         productContainer.innerHTML = '';
-        productImage.src = ''; // Clear src if not found
+        productImage.src = ''; // Clears src if not found
         productImage.alt = '';
     }
 }

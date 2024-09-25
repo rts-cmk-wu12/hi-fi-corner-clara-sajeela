@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let categories = []; // To store categories
+    let categories = []; // Stores categories
 
-    // Fetch the categories data
+    // Fetch categories data
     fetch('categories.json')
         .then(response => response.json())
         .then(data => {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             );
 
             if (filteredCategories.length > 0) {
-                // Redirect to the results page with the category data
+                // Redirect to results page with the category data
                 const queryString = encodeURIComponent(JSON.stringify(filteredCategories));
                 window.location.href = `category-list.html?categories=${queryString}`;
             } else {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Enter
+        // Enter for search form
         document.getElementById('search-input').addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 searchButton.click();
@@ -62,18 +62,18 @@ function displayCategories(categories) {
     }
 
     categories.forEach(category => {
-        // Create category heading
+        // Category heading
         const categoryHeading = document.createElement('h2');
         categoryHeading.textContent = category.category;
         container.appendChild(categoryHeading);
 
-        // Create a wrapper for the category content
+        // Wrapper for the category content
         const categoryWrapper = document.createElement('div');
         categoryWrapper.classList.add('category-wrapper');
 
-        // Add items to the category wrapper
+        // Items to the category wrapper
         category.descriptors.forEach(descriptor => {
-            // Create box for each item
+            // Box for each item
             const itemBox = document.createElement('div');
             itemBox.classList.add('item-box');
             itemBox.innerHTML = `
@@ -86,11 +86,11 @@ function displayCategories(categories) {
                 <button class="add-to-cart-button" onclick="addToCart(${descriptor.id})">View Product</button>
             `;
 
-            // Append the item to the category wrapper
+            // Appends item to category wrapper
             categoryWrapper.appendChild(itemBox);
         });
 
-        // Append category wrapper to the container
+        // Appends category wrapper to the container
         container.appendChild(categoryWrapper);
     });
 }

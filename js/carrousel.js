@@ -7,6 +7,7 @@ const next = document.querySelector('.next');
 let currentIndex = 0;
 const imageWindowWidth = imageWindow.offsetWidth;
 
+
 container.addEventListener('click', function(e) {
   let newIndex = currentIndex;
   if (e.target === prev) {
@@ -27,5 +28,5 @@ container.addEventListener('click', function(e) {
   // Transformation
   setTimeout(() => {
     imageRoll.style.transform = `translateX(-${offset}px)`;
-  }, 500); // Duration of the animation
+  }, 500); 
 });

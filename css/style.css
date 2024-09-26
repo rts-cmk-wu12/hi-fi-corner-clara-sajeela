@@ -7,3 +7,54 @@
 @import url(atoms.css);
 @import url(resets.css);
 @import url(category-section.css);
+
+
+@media screen and (max-width:480px) {
+
+.header-top{
+    max-width: 480px ;
+    display: flex;
+    justify-self: start;
+}
+
+.logo-icons,
+ .cart-container .fa-solid {
+   
+display: none;
+    
+}
+
+.nav-section {
+    max-width: 480px;
+display: flex;
+
+}
+
+.banner{
+    max-width: 480px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.hero,
+.banner,
+.carrousel{
+
+    max-width: 480px;
+}
+.imageroll flex  .img{
+    width: 80%;
+}
+
+footer {
+    display: flex;
+    justify-items: space-around;
+}
+.imagewindow{
+    display: flex;
+    justify-content: center;
+   
+    max-width: 480px;
+}
+}

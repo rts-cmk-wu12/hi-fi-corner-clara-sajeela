@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryName = urlParams.get('category');
     const showAll = urlParams.get('show');
 
-    // If "show=all" parameter is present, show all categories
+    // If "show=all" param is present, show all categories
     if (showAll === 'all') {
         fetch('categories.json')
             .then(response => response.json())
@@ -45,6 +45,7 @@ function displayAllCategories(categories) {
         // Wrapper for the category items
         const categoryWrapper = document.createElement('div');
         categoryWrapper.classList.add('category-wrapper');
+
 
         // Display all items in the category
         category.descriptors.forEach(descriptor => {

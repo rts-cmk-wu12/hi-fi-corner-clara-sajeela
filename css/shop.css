@@ -60,6 +60,42 @@ margin-bottom: 1em;
    
 }*/
 
+@media screen and (max-width:480px) {
+   
+   
+    .header-top{
+        max-width: 480px ;
+    }
+   
+    .logo-icons,
+     .cart-container .fa-solid {
+       
+    display: none;
+        
+    }
 
-  
+    .nav-section {
+        max-width: 480px;
+display: flex;
+
+    }
+
+
+    .page__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      max-width: 280px;
+      justify-content: center;
+     
+    }
+      
+    .page__image{
+        max-width: 250px;
+      
+    }
+    footer {
+        display: flex;
+        justify-items: space-around;
+    }
+}
   

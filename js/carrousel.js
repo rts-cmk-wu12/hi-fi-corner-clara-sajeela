@@ -7,6 +7,7 @@ const next = document.querySelector('.next');
 let currentIndex = 0;
 const imageWindowWidth = imageWindow.offsetWidth;
 
+
 container.addEventListener('click', function(e) {
   let newIndex = currentIndex;
   if (e.target === prev) {
@@ -21,11 +22,11 @@ container.addEventListener('click', function(e) {
   currentIndex = newIndex;
   const offset = newIndex * imageWindowWidth;
 
-  // First, animate the transition
+  // Transition
   imageRoll.animate([{ transform: `translateX(-${offset}px)` }], { duration: 500, fill: 'both' });
 
-  // Then, apply the transformation permanently
+  // Transformation
   setTimeout(() => {
     imageRoll.style.transform = `translateX(-${offset}px)`;
-  }, 500); // Match the duration of the animation
+  }, 500); 
 });

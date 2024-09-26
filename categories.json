@@ -270,7 +270,7 @@
             "year": 2023,
             "features": ["Noise Canceling", "Bluetooth", "Long Battery Life"],
             "price": "$349",
-            "image": "images/sony_wh1000xm5.jpg"
+            "image":  "produktbilleder/pladespillere/Pro_ject_Debut_3_bl.jpg"
           },
           {
             "id": 28,
@@ -279,7 +279,7 @@
             "year": 2022,
             "features": ["Noise Canceling", "Bluetooth", "Comfortable Design"],
             "price": "$329",
-            "image": "images/bose_qc45.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -293,7 +293,7 @@
             "year": 2023,
             "features": ["Blood Oxygen Sensor", "ECG", "GPS"],
             "price": "$399",
-            "image": "images/apple_watch_8.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 30,
@@ -302,7 +302,7 @@
             "year": 2022,
             "features": ["Heart Rate Monitor", "GPS", "Waterproof"],
             "price": "$299",
-            "image": "images/galaxy_watch_5.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -316,7 +316,7 @@
             "year": 2021,
             "features": ["8K Video", "Full-frame", "Image Stabilization"],
             "price": "$3899",
-            "image": "images/canon_eos_r5.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 32,
@@ -325,7 +325,7 @@
             "year": 2022,
             "features": ["45.7MP", "4K Video", "Full-frame"],
             "price": "$2999",
-            "image": "images/nikon_z7ii.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -339,7 +339,7 @@
             "year": 2023,
             "features": ["4K Video", "30-minute flight time", "Obstacle Avoidance"],
             "price": "$999",
-            "image": "images/dji_mavic_air2.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 34,
@@ -348,7 +348,7 @@
             "year": 2022,
             "features": ["4K HDR Video", "180° camera", "Compact design"],
             "price": "$699",
-            "image": "images/parrot_anafi.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -362,7 +362,7 @@
             "year": 2023,
             "features": ["Wireless Printing", "All-in-One", "High-speed"],
             "price": "$329",
-            "image": "images/hp_officejet_9025e.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 36,
@@ -371,7 +371,7 @@
             "year": 2022,
             "features": ["Cartridge-Free", "Wi-Fi", "Auto Document Feeder"],
             "price": "$299",
-            "image": "images/epson_ecotank_et3760.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -385,7 +385,7 @@
             "year": 2021,
             "features": ["4K HDR", "Ray Tracing", "SSD"],
             "price": "$499",
-            "image": "images/ps5.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 38,
@@ -394,7 +394,7 @@
             "year": 2022,
             "features": ["8K Resolution", "120FPS", "1TB SSD"],
             "price": "$499",
-            "image": "images/xbox_series_x.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -408,7 +408,7 @@
             "year": 2023,
             "features": ["Voice Assistant", "Smart Display", "Home Control"],
             "price": "$99",
-            "image": "images/google_nest_hub.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 40,
@@ -417,7 +417,7 @@
             "year": 2022,
             "features": ["Alexa", "Video Calling", "Smart Home Integration"],
             "price": "$129",
-            "image": "images/echo_show_8.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -431,7 +431,7 @@
             "year": 2022,
             "features": ["ECG", "Stress Management", "GPS"],
             "price": "$179",
-            "image": "images/fitbit_charge_5.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 42,
@@ -440,7 +440,7 @@
             "year": 2022,
             "features": ["Pulse Ox Sensor", "Body Battery Energy Monitoring", "GPS"],
             "price": "$249",
-            "image": "images/garmin_vivoactive_4.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -454,7 +454,7 @@
             "year": 2023,
             "features": ["8K Resolution", "Quantum Processor", "HDR10+", "Smart TV"],
             "price": "$2,999",
-            "image": "images/tv_samsung_qled_8k.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 44,
@@ -463,7 +463,7 @@
             "year": 2022,
             "features": ["4K HDR", "OLED Display", "Google TV", "Acoustic Surface Audio"],
             "price": "$1,899",
-            "image": "images/tv_sony_bravia_oled.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 45,
@@ -472,7 +472,7 @@
             "year": 2023,
             "features": ["4K UHD", "NanoCell Technology", "Dolby Vision", "ThinQ AI"],
             "price": "$1,299",
-            "image": "images/tv_lg_nanocell.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       },
@@ -486,7 +486,7 @@
             "year": 2021,
             "features": ["Natural Sound", "High-Resolution Audio", "120W Power Output", "Optical and Coaxial Inputs"],
             "price": "$899",
-            "image": "images/amplifier_yamaha_as801.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 47,
@@ -495,7 +495,7 @@
             "year": 2022,
             "features": ["Integrated Amplifier", "High Current Power", "Built-in DAC", "Phono EQ Stage"],
             "price": "$749",
-            "image": "images/amplifier_marantz_pm6007.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           },
           {
             "id": 48,
@@ -504,7 +504,7 @@
             "year": 2023,
             "features": ["Advanced Ultra High Current (UHC)", "Analog Mode", "High-Resolution Audio", "USB-DAC"],
             "price": "$1,499",
-            "image": "images/amplifier_denon_pma1600ne.jpg"
+            "image": "produktbilleder/int_forstaerkere/creek_classic5350SE.jpg"
           }
         ]
       }

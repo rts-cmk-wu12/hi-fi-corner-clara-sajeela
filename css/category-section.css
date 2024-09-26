@@ -5,16 +5,19 @@
 
 .grid-container {
     display: grid;
-    grid-template-areas: "home-amplifyers home-amplifyers home-amplifyers"
-        "left-sidebar right-sidebar main-content ";
+    grid-template-areas: 
+        "home-amplifyers home-amplifyers home-amplifyers"
+        "sort-by sort-by sort-by"
+        "left-sidebar main-content right-sidebar" 
+        "sort-by-footer sort-by-footer sort-by-footer" 
+        ;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr auto; 
     padding: 20px;
     gap: 20px;
     background-color: white;
     margin-left: 100px;
     margin-right: 100px;
-
 }
 
 .categorydiv {
@@ -42,6 +45,7 @@
 
 /*------ nav------*/
 .left-sidebar {
+    grid-area: left-sidebar;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -69,6 +73,7 @@
 
 /* Style for the right sidebar */
 .right-sidebar {
+    grid-area: right-sidebar;
     width: 100%;
     padding: 20px;
 }
@@ -105,7 +110,7 @@
 
 /*main content*/
 .main-content {
-    grid-area: right-sidebar;
+    grid-area: main-content;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -151,4 +156,31 @@
     border: none;
     padding: 5px;
     margin: 10px;
+}
+/*-------- sort by grey area---------*/
+.sort-by {
+    grid-area: sort-by;
+    background-color: #ccc;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sort-by select {
+    width: 50px;
+    font-size: 10px;   
+}
+
+.sort-by-p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.sort-by-footer {
+   grid-area: sort-by-footer;
+   margin-left: 250px;
+   width: 650px;
 }

@@ -1,15 +1,26 @@
+// For show all
 document.addEventListener('DOMContentLoaded', () => {
-    // Get all the category links
+   
+    const loadDataBtn = document.getElementById('load-data-btn'); 
+    if (loadDataBtn) {
+        loadDataBtn.addEventListener('click', function () {
+            // Redirect to category-list.html with the "show=all" parameter
+            window.location.href = 'category-list.html?show=all';
+        });
+    } else {
+        console.error("Shop Now button not found");
+    }
+
+    // For categories
     const categoryLinks = document.querySelectorAll('.thumbs__link');
 
-    // Loop through each link and add an event listener
+ 
     categoryLinks.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default behavior
+            event.preventDefault(); 
             
-            const category = this.getAttribute('data-category'); // Get the category from the data-category attribute
+            const category = this.getAttribute('data-category'); 
             
-            // Redirect to category-list.html with the category as a query parameter
             window.location.href = `category-list.html?category=${category}`;
         });
     });

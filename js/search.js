@@ -23,9 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Redirect to results page with the category data
                 const queryString = encodeURIComponent(JSON.stringify(filteredCategories));
                 window.location.href = `category-list.html?categories=${queryString}`;
-            } else {
-                alert('No categories found.');
-            }
+            } 
         });
 
         // Enter for search form
@@ -56,10 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function displayCategories(categories) {
     const container = document.getElementById('search-results');
 
-    if (categories.length === 0) {
-        container.innerHTML = '<p>No categories found.</p>';
-        return;
-    }
+ 
 
     categories.forEach(category => {
         // Category heading
@@ -77,7 +72,7 @@ function displayCategories(categories) {
             const itemBox = document.createElement('div');
             itemBox.classList.add('item-box');
             itemBox.innerHTML = `
-                <img src="${descriptor.image}" alt="${descriptor.type} image">
+                <img src="${descriptor.image}" alt="${descriptor.type} image" class="product-image">
                 <p>Brand: ${descriptor.brand}</p>
                 <p>Model: ${descriptor.model}</p>
                 <p>Year: ${descriptor.year}</p>

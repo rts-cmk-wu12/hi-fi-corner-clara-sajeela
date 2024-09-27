@@ -26,12 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             })
             .catch(error => console.error('Error fetching JSON:', error));
-    } else {
-        document.getElementById('category-title').textContent = 'No category specified or found';
-    }
+    } 
 });
 
-// Function to display all categories
+// Function to show categories
 function displayAllCategories(categories) {
     const container = document.getElementById('content-container');
     container.innerHTML = ''; // Clear container
@@ -52,7 +50,7 @@ function displayAllCategories(categories) {
             const itemBox = document.createElement('div');
             itemBox.classList.add('item-box');
             itemBox.innerHTML = `
-                <img src="${descriptor.image}" alt="${descriptor.model} image">
+                <img src="${descriptor.image}" alt="${descriptor.model} image" class="product-image">
                 <p>Brand: ${descriptor.brand}</p>
                 <p>Model: ${descriptor.model}</p>
                 <p>Year: ${descriptor.year}</p>

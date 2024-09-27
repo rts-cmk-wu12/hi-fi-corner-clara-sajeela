@@ -26,7 +26,9 @@ display: none;
 
 .nav-section {
     max-width: 480px;
-display: flex;
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+justify-content: center;
 
 }
 
@@ -52,9 +54,13 @@ footer {
     justify-items: space-around;
 }
 .imagewindow{
-    display: flex;
-    justify-content: center;
-   
+    display: grid;
+   grid-template-columns: repeat(1, 1fr);
+    align-items: center;
     max-width: 480px;
+}
+.social-banner{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 }

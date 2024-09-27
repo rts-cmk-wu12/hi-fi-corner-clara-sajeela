@@ -61,11 +61,6 @@ function displayAllCategories(categories) {
             // Appends itemBox to categoryWrapper
             categoryWrapper.appendChild(itemBox);
 
-            // Insert price
-            const pricePlaceholder = document.getElementById(`price-placeholder-${descriptor.id}`);
-            if (pricePlaceholder) {
-                pricePlaceholder.innerHTML = `<h3>${descriptor.price}</h3>`; 
-            }
         });
 
         container.appendChild(categoryWrapper);

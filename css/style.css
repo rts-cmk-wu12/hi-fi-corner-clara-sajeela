@@ -87,7 +87,9 @@ justify-content: center;
     display: flex;
     flex-direction: column-reverse;
 }
-
+.sort-by{
+    display: none;
+}
 footer {
     display: flex;
     justify-items: space-around;

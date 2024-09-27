@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single product</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/single-product.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <!-- Top header section -->
+        <div class="header-top">
+
+            <img src="img/hifilogo.png" alt="hifologo" class="headerlogo"> <!-- Header logo -->
+            <div class="search-container"> <!-- Header form -->
+                <input type="text" placeholder="search entire store here..." class="search-input" id="search-input">
+                <button class="search-button" id="search-button">
+                    <i class="fas fa-search"></i> <!-- Font Awesome magnifying glass icon -->
+
+                </button>
+            </div>
+
+
+
+
+            <div class="cart-container"> <!-- Account icon -->
+                <i class="fas fa-user"></i>
+                <p>ACCOUNT</p>
+            </div>
+
+            <a href="single-product.html">
+                <div class="cart-container"> <!-- Shopping cart icon -->
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>CART</p>
+                </div>
+            </a>
+
+            <div class="logo-icons">
+                <i class="fas fa-map-marker-alt"></i> <!-- Map Icon -->
+                <i class="fas fa-phone"></i> <!-- Phone Icon -->
+                <i class="fas fa-envelope"></i> <!-- Email Icon -->
+            </div>
+
+        </div>
+
+        <!-- Navigation section below the header -->
+        <div class="nav-section">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="wrapper">
+        <section class="categorydiv">
+
+        </section>
+        <div class="breadcrumb">
+            <a href="#">Home</a> / <a href="#">Amplifiers</a> / Marantz PM6006 UK Edition Integrated Amplifier
+        </div>
+
+        <div class="product__reklamer">
+            <img class="product__visit" src="images/new.png">
+        </div>
+        <div class="container">
+            <section class="product-section">
+                <div class="left-column">
+
+
+
+
+                    <div id="product-image-container"> <!---- product image populated by single-product.js----->
+                        <!-- Image will be placed here -->
+                        <img id="product-image" src="" alt="Product Image">
+                    </div>
+
+                    <div class="more-views">
+                        <h4>MORE VIEWS</h4>
+                        <div class="more__product">
+                            <div>
+                                <img src="images/black.jpg" alt="Amplifier Thumbnail">
+                            </div>
+                            <div>
+                                <img src="images/amplifir.jpg" alt="Amplifier Thumbnail">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right-column">
+                    <h2 class="product__heading" id="product-title"></h2>
+                    <!---- product title populated by single-product.js----->
+
+                    <div class="price">
+                        <div>
+                            <p class="see-products"><a href="#">See other Marantz products</a></p>
+                        </div>
+                        <div>
+
+                            <p class="product__price"> <span class="old-price">£469.00</span>
+                                <span class="new-price">£429.00</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="product__information" id="product-container">The PM6006 is an upgraded successor of the
+                        multi-awad winning
+                        PM6005
+                        Marantz retained the pre-amp and<br>
+                        power-amp sections that exclusively feature discreat componenets-not a single IC sight of
+                        the
+                        signal path.The<br>
+                        PM6006 is upgraded for peak curent at the amplifir stage, which make it possible to refine
+                        the
+                        sound for you in<br>
+                        much more detail. </p>
+                    <div class="product__button">
+                        <button class="sumit__button"> <a class="product__link" href="#">ASK A QUESTION</a></button>
+                        <button class="sumit__button"><a class="product__link" href="#"> PART EXCHANGE</a></button>
+                        <button class="sumit__button"> <a class="product__link" href="#">PAY BY FINANCE</a></button>
+                        <button class="sumit__button"><a class="product__link" href="#">SEEN A BETTER
+                                PRICE?</a></button>
+                    </div>
+
+                    <!---------------form----------------------------------------------->
+
+
+                    <section class="form">
+                        <h2 class="finish">Finish <span class="required">*<span class="required__red">*Required
+                                    Fields</span></h2>
+                        <form class="product-form">
+                            <div class="radio__product">
+                                <input type="radio" id="black" name="finish" value="Black">
+                                <label for="black">Black</label>
+                            </div>
+                            <div class="radio__product">
+                                <input type="radio" id="silver" name="finish" value="Silver">
+                                <label for="silver">Silver</label>
+                            </div>
+                            <div class="payment__product">
+                                <div class="add-to-cart">
+                                    <label for="quantity">Qty:</label>
+                                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                                    <button type="button" class="cart-button">Add to Cart</button>
+                                </div>
+                                <div class="or">
+                                    - OR -
+                                </div>
+                                <div class="paypal_checkout">
+                                    <button class="paypal-button"><i class="fa-brands fa-paypal"></i>CHECK OUT</button>
+                                    <P class="product__spar">The safe,easier way to pay </P>
+                                    <hr class="inline">
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+
+
+
+
+                    <section>
+
+                        <!-- Additional Information -->
+                        <div class="additional-info">
+                            <h3 class="Additional__heading">Additional Information</h3>
+                            <table>
+                                <tr>
+                                    <td class="Additional__table">Manufacturer:</td>
+                                    <td>Marantz</td>
+                                </tr>
+                                <tr>
+                                    <td class="Additional__table">Model:</td>
+                                    <td><span class="Additional">Marantz PM6006</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="Additional__table">Free Warranty:</td>
+                                    <td>3 years</td>
+                                </tr>
+                                <tr>
+                                    <td class="Additional__table">Delivery Charge:</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td class="Additional__table">Delivery Time:</td>
+                                    <td>1 - 5 Working Days</td>
+                                </tr>
+                                <tr>
+                                    <td class="Additional__table">Card Surcharges:</td>
+                                    <td>No</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </section>
+
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <div class="description-container">
+            <h2>DESCRIPTION</h2>
+            <table>
+                <tr class="detail">
+                    <td class="detail__td">Power Output (8 / 4 Ohm RMS)</td>
+                    <td class="detail__td1">45 W / 60 W</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Frequency Response</td>
+                    <td class="detail__td1">10 Hz - 70 kHz</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Total Harmonic Distortion</td>
+                    <td class="detail__td1">0.08 %</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Damping Factor</td>
+                    <td class="detail__td1">100</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Input Sensitivity: MM</td>
+                    <td class="detail__td1">2.2 mV / 47 kOhm</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Input Sensitivity: MC</td>
+                    <td class="detail__td1">&#10006; </td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Signal to Noise Ratio: MM / MC</td>
+                    <td class="detail__td1">83 dB /</td>
+                    <td class="detail__td1">&#10006;</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Input Sensitivity: High level</td>
+                    <td class="detail__td1">200 mV / 20 kOhm</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Input Sensitivity: Balanced High level</td>
+                    <td class="detail__td2">&#10006;</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Signal to Noise Ratio: High level</td>
+                    <td class="detail__td1">102 dB (2V input)</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Input Sensitivity: Power Amp Direct IN</td>
+                    <td class="detail__td2">&#10006;</td>
+                </tr>
+                <tr class="detail">
+                    <td class="detail__td">Signal to Noise Ratio: Power Amp Direct IN</td>
+                    <td class="detail__td2">&#10006;</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class="call__us">
+            <p class="call"><i class="fa-solid fa-phone"></i>CALL US ABOUT THIS PRODUCT</p>
+        </div>
+        <footer> <!-- Footer starter -->
+            <section>
+                <p>
+                    Hi-Fi Corner
+                </p>
+                <p>
+                    Edingburgh 2 Joppa Road EH15 2EU
+                </p>
+                <p>
+                    Falkirk 44 Cow Wynd FK1 1PU
+                </p>
+            </section>
+
+            <section class="link">
+                <a href="#">Returns & Refunds</a>
+
+                <a href="#">Privacy Policy</a>
+            </section>
+
+            <section>
+                <img src="img/footerimg.png" alt="footerimg">
+            </section>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

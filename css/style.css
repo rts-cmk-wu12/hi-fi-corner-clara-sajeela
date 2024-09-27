@@ -1,0 +1,98 @@
+/*-------- style sheets ---------*/
+
+@import url(category-section.css);
+@import url(frontpage.css);
+@import url(header.css);
+@import url(product.css);
+@import url(resets.css);
+@import url(shop.css);
+@import url(text.css);
+@import url(variables.css);
+@import url(carrousel.css);
+@import url(footer.css);
+@import url(brands.css);
+
+
+/*--------- media query-----------*/
+@media screen and (max-width:480px) {
+
+.header-top{
+    max-width: 480px ;
+    display: flex;
+    justify-self: start;
+}
+
+.logo-icons,
+ .cart-container .fa-solid {
+   
+display: none;
+    
+}
+
+.nav-section {
+    max-width: 480px;
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+justify-content: center;
+
+}
+
+.banner{
+    max-width: 480px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.hero,
+.banner,
+.carrousel{
+
+    max-width: 480px;
+}
+.imageroll flex  .img{
+    width: 80%;
+}
+
+.imagewindow{
+    display: grid;
+   grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    max-width: 480px;
+}
+.social-banner{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.brands-hero{
+    max-width: 480px;
+}
+
+.brand{
+  display: none;
+}
+.brandimg{
+    max-width: 450px;
+
+    margin-bottom: 2em;
+}
+.category-main{
+    max-width: 480px;
+}
+.grid-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.left-sidebar{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.sort-by{
+    display: none;
+}
+footer {
+    display: flex;
+    justify-items: space-around;
+}
+
+}

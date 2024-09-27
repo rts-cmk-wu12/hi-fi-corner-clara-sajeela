@@ -1,0 +1,70 @@
+  
+/*----------- carrousel ------------*/
+.carrousel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex {
+    display: flex;
+  }
+
+  .imagewindow {
+    position: relative;
+    width: 980px;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .imageroll {
+    display: flex;
+    transition: transform 0.5s ease;
+  
+  }
+
+  .button {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    z-index: 1;
+    color: var(--secondary-color);
+    font-size: 80px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .prev::before,
+  .next::before {
+    font-family: Arial, sans-serif;
+  }
+  
+  .prev::before {
+    content: '\2039';
+  }
+  
+  .next::before {
+    content: '\203A';
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top 0 right 10px;
+  
+  }

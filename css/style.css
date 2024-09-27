@@ -1,14 +1,19 @@
 /*-------- style sheets ---------*/
 
-@import url(variables.css);
-@import url(layout.css);
-@import url(organisms.css);
-@import url(molecules.css);
-@import url(atoms.css);
-@import url(resets.css);
 @import url(category-section.css);
+@import url(frontpage.css);
+@import url(header.css);
+@import url(product.css);
+@import url(resets.css);
+@import url(shop.css);
+@import url(text.css);
+@import url(variables.css);
+@import url(carrousel.css);
+@import url(footer.css);
+@import url(brands.css);
 
 
+/*--------- media query-----------*/
 @media screen and (max-width:480px) {
 
 .header-top{

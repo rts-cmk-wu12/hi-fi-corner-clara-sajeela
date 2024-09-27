@@ -50,7 +50,7 @@ function displayAllCategories(categories) {
             const itemBox = document.createElement('div');
             itemBox.classList.add('item-box');
             itemBox.innerHTML = `
-                <img src="${descriptor.image}" alt="${descriptor.model} image" class="product-image">
+                <img src="${descriptor.image}" alt="${descriptor.model} image">
                 <p>Brand: ${descriptor.brand}</p>
                 <p>Model: ${descriptor.model}</p>
                 <p>Year: ${descriptor.year}</p>
@@ -61,11 +61,6 @@ function displayAllCategories(categories) {
             // Appends itemBox to categoryWrapper
             categoryWrapper.appendChild(itemBox);
 
-            // Insert price
-            const pricePlaceholder = document.getElementById(`price-placeholder-${descriptor.id}`);
-            if (pricePlaceholder) {
-                pricePlaceholder.innerHTML = `<h3>${descriptor.price}</h3>`; 
-            }
         });
 
         container.appendChild(categoryWrapper);

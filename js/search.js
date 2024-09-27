@@ -72,7 +72,7 @@ function displayCategories(categories) {
             const itemBox = document.createElement('div');
             itemBox.classList.add('item-box');
             itemBox.innerHTML = `
-                <img src="${descriptor.image}" alt="${descriptor.type} image">
+                <img src="${descriptor.image}" alt="${descriptor.type} image" class="product-image">
                 <p>Brand: ${descriptor.brand}</p>
                 <p>Model: ${descriptor.model}</p>
                 <p>Year: ${descriptor.year}</p>

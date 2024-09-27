@@ -1,0 +1,198 @@
+.category-main {
+    background-color: black;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "home-amplifyers home-amplifyers home-amplifyers"
+        "sort-by sort-by sort-by"
+        "left-sidebar main-content right-sidebar" 
+        "sort-by-footer sort-by-footer sort-by-footer" 
+        ;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto; 
+    padding: 20px;
+    gap: 20px;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.categorydiv {
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+}
+
+.home-amplifyers {
+    grid-column: 1 / -1;
+    grid-area: home-amplifyers;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+.home-amplifyers a {
+    text-decoration: none;
+    color: #333;
+}
+
+.home-amplifyers a:hover {
+    text-decoration: underline;
+}
+
+/*------ nav------*/
+.left-sidebar {
+    grid-area: left-sidebar;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.left-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-sidebar ul a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+    padding: 10px;
+}
+
+
+.left-sidebar a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+/* Style for the right sidebar */
+.right-sidebar {
+    grid-area: right-sidebar;
+    width: 100%;
+    padding: 20px;
+}
+
+.right-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-sidebar ul a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.right-sidebar a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+/* Styling for navigation sections */
+.category-nav-1 {
+    margin-bottom: 20px;
+}
+
+.category-nav-1,
+.category-nav-2 {
+    width: 100%;
+    padding: 20px;
+    background-color: lightgray;
+
+}
+
+/*main content*/
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-width: 100%;
+}
+
+/*-------- CSS for fetch.js ---------*/
+
+#content-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.category-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.product-image {
+    width: 150px;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box for each item */
+.item-box {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 200px;
+
+   
+}
+
+.add-to-cart-button {
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+/*-------- sort by grey area---------*/
+.sort-by {
+    grid-area: sort-by;
+    background-color: #ccc;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sort-by select {
+    width: 50px;
+    font-size: 10px;   
+}
+
+.sort-by-p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.sort-by-footer {
+   grid-area: sort-by-footer;
+   margin-left: 250px;
+   width: 650px;
+}

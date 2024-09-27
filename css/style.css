@@ -54,10 +54,6 @@ justify-content: center;
     width: 80%;
 }
 
-footer {
-    display: flex;
-    justify-items: space-around;
-}
 .imagewindow{
     display: grid;
    grid-template-columns: repeat(1, 1fr);
@@ -68,4 +64,33 @@ footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
+.brands-hero{
+    max-width: 480px;
+}
+
+.brand{
+  display: none;
+}
+.brandimg{
+    max-width: 450px;
+
+    margin-bottom: 2em;
+}
+.category-main{
+    max-width: 480px;
+}
+.grid-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.left-sidebar{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer {
+    display: flex;
+    justify-items: space-around;
+}
+
 }
